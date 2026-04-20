@@ -45,3 +45,13 @@ chmod +x *.sh
 ```console
 rm -rf .git
 ```
+
+4. Create a distrobox container and enter it.
+
+> **💡 TIP**  
+> You can change whatever you want in *distrobox.ini* (e.g., image=docker.io/almalinux/10-init) before run `make build`.
+
+```console
+make build
+make enter
+```
