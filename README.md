@@ -35,6 +35,13 @@ git clone https://github.com/nutthawit-l/base-env.git connect-go-example
 2. In the *connect-go-example* directory. Run the following scripts.
 
 ```console
+chmod +x *.sh
 ./gen_makefile.sh
 ./gen_distrobox.sh
+```
+
+3. Remove *.git* directory for create your own.
+
+```console
+rm -rf .git
 ```
