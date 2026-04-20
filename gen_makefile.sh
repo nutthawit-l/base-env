@@ -38,7 +38,7 @@ enter-v:
 	distrobox enter -v \$(CONTAINER_NAME)
 
 link-ssh:
-	ls -svf ~/.ssh .
+	ln -svf ~/.ssh/ .
 
 # The following commands must be executed within a Distrobox container
 
