@@ -1,0 +1,24 @@
+# Distrobox ignore
+.sudo_as_admin_successful
+.wget-hsts
+/.cache
+/.config
+/.pki
+/.vscode/*
+!/.vscode/launch.json
+/.ssh
+/.local
+.bash_history
+/.dotnet
+/.gitconfig
+/.profile
+/.bash_logout
+
+# Claude
+.claude.json
+/.claude
+.worktrees/
+
+# Project specific
+go.tar.gz
+/go
