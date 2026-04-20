@@ -1,14 +1,12 @@
 #!/bin/bash
 
-# Get CONTAINER_NAME from user input
-if [ -n "$1" ]; then
-    CONTAINER_NAME="$1"
-else
-    read -p "Enter container name: " CONTAINER_NAME
-    if [ -z "$CONTAINER_NAME" ]; then
-        echo "Container name cannot be empty. Aborting."
-        exit 1
-    fi
+# Use current directory name as container name
+CONTAINER_NAME=$(basename "$PWD")
+
+# Validate folder name
+if [ -z "$CONTAINER_NAME" ]; then
+    echo "Error: Could not determine current folder name. Aborting."
+    exit 1
 fi
 
 # Check if Makefile already exists
@@ -68,4 +66,4 @@ install-claude:
 EOF
 
 echo "Makefile generated successfully with:"
-echo "  CONTAINER_NAME  = $CONTAINER_NAME"
+echo "  CONTAINER_NAME  = $CONTAINER_NAME (from current directory)"

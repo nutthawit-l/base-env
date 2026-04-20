@@ -35,6 +35,6 @@ git clone https://github.com/nutthawit-l/base-env.git connect-go-example
 2. In the *connect-go-example* directory. Run the following scripts.
 
 ```console
-./gen_makefile.sh [container_name]
+./gen_makefile.sh
 ./gen_distrobox.sh
 ```
