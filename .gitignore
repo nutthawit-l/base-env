@@ -1,6 +1,8 @@
 # Distrobox ignore
 .sudo_as_admin_successful
+.gnupg
 .wget-hsts
+.bash_profile
 /.cache
 /.config
 /.pki
