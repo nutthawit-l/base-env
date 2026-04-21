@@ -37,7 +37,7 @@ git clone https://github.com/nutthawit-l/base-env.git connect-go-example
 ```console
 chmod +x *.sh
 ./gen_makefile.sh
-./gen_distrobox.sh
+./gen_distrobox.sh ubuntu-lts
 ```
 
 3. Remove *.git* directory for create your own.
@@ -49,7 +49,7 @@ rm -rf .git
 4. Create a distrobox container and enter it.
 
 > **💡 TIP**  
-> You can change whatever you want in *distrobox.ini* (e.g., image=docker.io/jrei/systemd-ubuntu:24.04) before run `make build`.
+> You can change whatever you want in *distrobox.ini* (e.g., image=docker.io/jrei/systemd-fedora:latest) before run `make build`.
 
 ```console
 make build
@@ -59,7 +59,6 @@ make enter
 5. Initial your project.
 
 ```console
-echo "gen_makefile.sh" >> .gitignore
-gen_distrobox.sh >> .gitignore
+rm -rf gen_distrobox.sh gen_makefile.sh
 git init
 ```
