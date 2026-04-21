@@ -56,6 +56,14 @@ make build
 make enter
 ```
 
+5. Install vscode, claude and gh-cli.
+
+```console
+make install-vscode
+make install-gh
+make install-claude
+```
+
 5. Initial your project.
 
 ```console
