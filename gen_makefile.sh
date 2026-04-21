@@ -23,7 +23,7 @@ fi
 cat > Makefile << 'EOF'
 CONTAINER_NAME = CONTAINER_NAME_PLACEHOLDER
 
-build: link-ssh
+build: link-ssh link-gitconfig
 	distrobox assemble create
 
 clean:
@@ -39,6 +39,9 @@ enter-v:
 
 link-ssh:
 	ln -svf ~/.ssh/ .
+
+link-gitconfig:
+	ln -svf ~/.gitconfig .
 
 # The following commands must be executed within a Distrobox container
 

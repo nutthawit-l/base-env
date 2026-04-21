@@ -21,6 +21,5 @@
 /.claude
 .worktrees/
 
-# Project specific
-go.tar.gz
-/go
+# Your project specific
+
