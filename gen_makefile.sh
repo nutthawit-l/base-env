@@ -73,7 +73,7 @@ install-vscode:
 		$(MAKE) install-vscode-deb; \
 	elif [ -f /etc/redhat-release ]; then \
 		echo "Detected RHEL/Fedora – using dnf method"; \
-		$(MAKE) install-vscode-repo; \
+		$(MAKE) install-vscode-rpm-repo; \
 		$(MAKE) install-vscode-rpm; \
 	else \
 		echo "Unsupported OS – cannot install VSCode automatically"; \
