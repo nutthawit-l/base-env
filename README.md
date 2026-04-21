@@ -59,6 +59,6 @@ make enter
 5. Initial your project.
 
 ```console
-rm -rf gen_distrobox.sh gen_makefile.sh
+rm -rf gen_distrobox.sh gen_makefile.sh README.md
 git init
 ```
