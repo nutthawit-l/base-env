@@ -49,9 +49,17 @@ rm -rf .git
 4. Create a distrobox container and enter it.
 
 > **💡 TIP**  
-> You can change whatever you want in *distrobox.ini* (e.g., image=docker.io/almalinux/10-init) before run `make build`.
+> You can change whatever you want in *distrobox.ini* (e.g., image=docker.io/jrei/systemd-ubuntu:24.04) before run `make build`.
 
 ```console
 make build
 make enter
+```
+
+5. Initial your project.
+
+```console
+echo "gen_makefile.sh" >> .gitignore
+gen_distrobox.sh >> .gitignore
+git init
 ```
