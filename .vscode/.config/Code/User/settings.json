@@ -1,0 +1,7 @@
+{
+    "workbench.colorTheme": "Solarized Light",
+    "git.confirmSync": false,
+    "explorer.confirmDragAndDrop": false,
+    "terminal.integrated.mouseWheelScrollSensitivity": 3,
+    "terminal.integrated.defaultLocation": "editor"
+}
