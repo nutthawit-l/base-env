@@ -1,7 +1,16 @@
 {
+    // General
     "workbench.colorTheme": "Solarized Light",
-    "git.confirmSync": false,
     "explorer.confirmDragAndDrop": false,
+
+    // Git
+    "git.confirmSync": false,
+    "diffEditor.renderSideBySide": false,
+    
+    // Keyboard
+    "keyboard.dispatch": "keyCode",
+
+    // Terminal
     "terminal.integrated.mouseWheelScrollSensitivity": 3,
     "terminal.integrated.defaultLocation": "editor"
 }
