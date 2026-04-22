@@ -56,7 +56,7 @@ make build
 make enter
 ```
 
-5. Install vscode, claude and gh-cli.
+5. Inside the distrobox install vscode, claude and gh-cli.
 
 ```console
 make install-vscode
