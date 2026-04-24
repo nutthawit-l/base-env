@@ -29,6 +29,9 @@ build: link-ssh link-gitconfig
 clean:
 	distrobox assemble rm
 
+stop:
+	distrobox stop $(CONTAINER_NAME)
+
 rebuild: clean build
 
 enter:
