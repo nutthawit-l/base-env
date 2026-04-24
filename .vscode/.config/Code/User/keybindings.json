@@ -11,7 +11,9 @@
         "key": "ctrl+`",
         "command": "runCommands",
         "args": {
-            "commands": [ "workbench.action.toggleMaximizedPanel" ]
+            "commands": [
+                "workbench.action.toggleMaximizedPanel"
+            ]
         },
         "when": "!terminalFocus"
     },
