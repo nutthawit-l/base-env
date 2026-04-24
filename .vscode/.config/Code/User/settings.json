@@ -1,7 +1,11 @@
 {
     // General
-    "workbench.colorTheme": "Solarized Light",
     "explorer.confirmDragAndDrop": false,
+    "workbench.panel.defaultLocation": "right",
+    "workbench.colorTheme": "Solarized Light",
+
+    // Claude
+    "claudeCode.preferredLocation": "panel",
 
     // Git
     "git.confirmSync": false,
