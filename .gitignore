@@ -4,7 +4,6 @@
 .wget-hsts
 .bash_profile
 /.cache
-/.config
 /.pki
 /.ssh
 /.local
@@ -15,9 +14,19 @@
 /.bash_logout
 
 # VSCode
-/.vscode/.config/Code/User/*
-!/.vscode/.config/Code/User/settings.json
-!/.vscode/.config/Code/User/keybindings.json
+/.vscode/*
+
+# Ignore everything inside the .config directory
+.config/*
+# But allow the Code subdirectory to be tracked
+!.config/Code
+# Ignore everything inside Code except the User subdirectory
+.config/Code/*
+!.config/Code/User
+# Ignore everything inside User except the two specific JSON files
+.config/Code/User/*
+!.config/Code/User/settings.json
+!.config/Code/User/keybindings.json
 
 # Claude
 .claude.json
@@ -25,4 +34,3 @@
 .worktrees/
 
 # Your project specific
-
