@@ -42,7 +42,7 @@ esac
 # Template content with placeholder for full current directory path and image
 read -r -d '' TEMPLATE << 'EOF'
 [base-env]
-additional_packages="git make"
+additional_packages="git jq make neovim"
 image=IMAGE_PLACEHOLDER
 init=true
 home=CURRENT_DIR_PLACEHOLDER
