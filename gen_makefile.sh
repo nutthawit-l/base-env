@@ -127,6 +127,25 @@ install-gh-dnf5:
 install-claude:
 	curl -fsSL https://claude.ai/install.sh | bash
 
+install-cursor:
+	@if [ -f /etc/debian_version ]; then \
+		echo "Detected Debian/Ubuntu – using apt method"; \
+		$(MAKE) install-cursor-deb; \
+	elif [ -f /etc/fedora-release ] && grep -qi "fedora" /etc/fedora-release; then \
+		echo "Detected Fedora – using dnf (official repo)"; \
+		$(MAKE) install-cursor-rpm; \
+	else \
+		echo "Unsupported OS – cannot install Cursor"; \
+		exit 1; \
+	fi
+
+install-cursor-deb:
+	curl -fsSL -o cursor.deb https://api2.cursor.sh/updates/download/golden/linux-x64-deb/cursor/3.3
+	sudo dpkg -i cursor.deb
+
+install-cursor-rpm:
+	curl -fsSL -o cursor.rpm https://api2.cursor.sh/updates/download/golden/linux-x64-rpm/cursor/3.3
+	sudo dnf install cursor.rpm
 EOF
 
 # Replace the placeholder with the actual container name
