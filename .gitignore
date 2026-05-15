@@ -30,7 +30,7 @@
 
 # Claude
 .claude.json
-/.claude
+.claude/
 .worktrees/
 
 # Your project specific
